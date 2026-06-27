@@ -24,7 +24,9 @@
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
         "bradlc.vscode-tailwindcss",
-        "golang.go"
+        "golang.go",
+        "usernamehw.errorlens",
+        "geequlim.godot-tools"
       ],
       "settings": {
         "editor.formatOnSave": true,
