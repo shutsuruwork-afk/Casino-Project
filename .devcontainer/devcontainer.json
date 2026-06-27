@@ -1,19 +1,19 @@
 {
   "name": "GameHub Polyglot Codespace",
-  "dockerComposeFile": "../docker-compose.yml",
-  "service": "devcontainer",
-  "workspaceFolder": "/workspace",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
   "features": {
     "ghcr.io/devcontainers/features/rust:1": {
       "version": "latest",
       "profile": "minimal"
     },
     "ghcr.io/devcontainers/features/node:1": {
-      "version": "20",
-      "nodeGypDependencies": true
+      "version": "20"
     },
     "ghcr.io/devcontainers/features/go:1": {
       "version": "1.22"
+    },
+    "ghcr.io/devcontainers/features/sshd:1": {
+      "version": "latest"
     }
   },
   "customizations": {
@@ -24,8 +24,7 @@
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
         "bradlc.vscode-tailwindcss",
-        "golang.go",
-        "geequlim.godot-tools"
+        "golang.go"
       ],
       "settings": {
         "editor.formatOnSave": true,
