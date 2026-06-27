@@ -26,7 +26,9 @@
         "bradlc.vscode-tailwindcss",
         "golang.go",
         "usernamehw.errorlens",
-        "geequlim.godot-tools"
+        "geequlim.godot-tools",
+        "walkway36.websocket-test-client",
+        "ryanluker.vscode-coverage-gutters"
       ],
       "settings": {
         "editor.formatOnSave": true,
