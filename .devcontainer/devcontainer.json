@@ -28,7 +28,11 @@
         "usernamehw.errorlens",
         "geequlim.godot-tools",
         "walkway36.websocket-test-client",
-        "ryanluker.vscode-coverage-gutters"
+        "ryanluker.vscode-coverage-gutters",
+        "mikestead.dotenv",
+        "redhat.vscode-yaml",
+        "mtxr.sqltools",
+        "mtxr.sqltools-driver-pg"
       ],
       "settings": {
         "editor.formatOnSave": true,
