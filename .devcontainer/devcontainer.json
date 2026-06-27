@@ -1,0 +1,39 @@
+{
+  "name": "GameHub Polyglot Codespace",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "devcontainer",
+  "workspaceFolder": "/workspace",
+  "features": {
+    "ghcr.io/devcontainers/features/rust:1": {
+      "version": "latest",
+      "profile": "minimal"
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20",
+      "nodeGypDependencies": true
+    },
+    "ghcr.io/devcontainers/features/go:1": {
+      "version": "1.22"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "rust-lang.rust-analyzer",
+        "tamasfe.even-better-toml",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss",
+        "golang.go",
+        "geequlim.godot-tools"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "rust-analyzer.linkedProjects": ["core-server/Cargo.toml"]
+      }
+    }
+  },
+  "forwardPorts": [3000, 8080, 5432],
+  "remoteUser": "vscode",
+  "postCreateCommand": "bash .devcontainer/post-create.sh"
+}
