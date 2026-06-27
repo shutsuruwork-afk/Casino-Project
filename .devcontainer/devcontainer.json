@@ -32,7 +32,9 @@
         "mikestead.dotenv",
         "redhat.vscode-yaml",
         "mtxr.sqltools",
-        "mtxr.sqltools-driver-pg"
+        "mtxr.sqltools-driver-pg",
+        "Gruntfuggly.todo-tree",
+        "humao.rest-client"
       ],
       "settings": {
         "editor.formatOnSave": true,
